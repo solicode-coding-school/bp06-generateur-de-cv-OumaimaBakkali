@@ -8,7 +8,7 @@ form{
     display: flex;
     justify-content: space-around;
 }
-.input{
+.inpt{
     width: 400px;
     height: 50px;
     margin: 5px;
@@ -21,7 +21,7 @@ button{
     margin: 10px;
     background-color: cadetblue;
     width: 100px;
-    height: 30px;
+    height: 50px;
     border-radius: 7px;
     color: aliceblue;
 }

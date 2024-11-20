@@ -11,36 +11,45 @@
         <div class="container-left">
             <h1>Personal Information</h1>
             <label for="name">Your name</label><br>
-            <input type="text" name="name" class="input"><br>
+            <input type="text" name="name" class="inpt"><br>
             <label for="job">Your job</label><br>
-            <input type="text" name="job" class="input"><br>
+            <input type="text" name="job" class="inpt"><br>
             <label for="contact">Your contact</label><br>
-            <input type="text" name="contact" class="input"><br>
+            <input type="text" name="contact" class="inpt"><br>
             <label for="gmail">Your gmail</label><br>
-            <input type="email" name="gmail" class="input"><br>
-            <input type="file" name="file" class="input" ><br>
+            <input type="email" name="gmail" class="inpt"><br>
+            <input type="file" name="file" class="inpt"><br>
             <label for="Adresse">Your Adresse</label><br>
-            <input type="text" name="Adresse" class="input"><br>
+            <input type="text" name="Adresse" class="inpt"><br>
             <label for="birth">Your birthday</label><br>
-            <input type="date" name="birth" class="input"><br>
-            <p>Eduvation</p>
-            <label>start date</label>
-            <input type="date">
-            <label>finished date</label>
-            <input type="date">
-            <label>Diplome </label>
-            <input type="text"><br>
-            <button type="button">Add</button>
+            <input type="date" name="birth" class="inpt"><br>
+
+            <p>Education</p>
+            <div id="education-fields">
+                <label>Start date</label>
+                <input type="date" class="input">
+                <label>Finished date</label>
+                <input type="date" class="input">
+                <label>Diploma</label>
+                <input type="text" class="input"><br>
+            </div>
+            <button type="button" onclick="addEducation()">Add Education</button>
         </div>
+
         <div class="container-right">
             <h1>Professional Information</h1>
-                <p>objective</p>
-                <textarea name="objective" id=""></textarea><br>
-                <button type="button">Add</button>
-                <p>Work experience</p>
-                <textarea name="objective" id=""></textarea><br>
-                <button type="button">Add</button>
+            <p>Objective</p>
+            <div id="objective-fields">
+                <textarea name="objective" class="input"></textarea>
+            </div>
+            <button type="button" onclick="addObjective()">Add Objective</button>
+            <p>Work Experience</p>
+            <div id="work-fields">
+                <textarea name="work-experience" class="input"></textarea>
+            </div>
+            <button type="button" onclick="addWorkExperience()">Add Work Experience</button>
         </div>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
